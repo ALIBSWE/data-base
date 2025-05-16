@@ -44,13 +44,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//        List<Task> fakeList = new ArrayList<>();
-//        for (int j = 0; j < 20; j++) {
-//            Task newTask = new Task("test" + j, "time :" + j);
-//            taskDao.insertTask(newTask);
-////            fakeList.add(newTask);
-//        }
-
         mainAdapter = new MainAdapter(taskDao.getAll());
 
         rv_main.setLayoutManager(new LinearLayoutManager(this));
